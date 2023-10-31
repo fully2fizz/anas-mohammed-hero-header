@@ -1,0 +1,22 @@
+/* Breakpoints */
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 991px;
+$bp-xl: 1200px;
+$bp-xxl: 1400px;
+
+/* Setup font families here and adjust font weights as needed */
+$body: 'Poppins', sans-serif;
+$hero-title: 'Merriweather', serif;
+$font-weight-400: 400;
+$font-weight-500: 500;
+$font-weight-700: 700;
+
+/* Set up custom variables for brand colors */
+$brand-primary: #2B2D38;
+$btn-primary: #219653;
+$brand-secondary: #464751;
+$white: #fff;
+$black: #000;
+
+$shadow-low: 0px, 0px, 15px, 0px rgba(0, 0, 0, 0.25);

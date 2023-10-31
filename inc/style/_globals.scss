@@ -1,0 +1,106 @@
+
+// google font
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Poppins:wght@400;500&display=swap');
+
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+html {
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
+}
+html, body {
+	margin: 0;
+	height: 100%;
+}
+body {
+	font-family: $body;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+}
+section, .container, .container-fluid {position: relative;}
+.container, .container-fluid {z-index: 10;}
+img, picture, video, canvas, svg {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+input, button, textarea, select { font: inherit; }
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+	margin: 0;
+	padding: 0;
+}
+ul[class], ol[class] {padding: 0;}
+ul[class] {list-style: none;}
+
+
+/* # Typography
+--------------------------------------------------------------*/
+h1 {
+	font-family: $hero-title;
+	line-height: normal;
+	margin-bottom: 20px;
+}
+h2,h3,h4,h5,h6 {
+	font-family: $body;
+	line-height: normal;
+	margin-bottom: 20px;
+}
+p[class], ul[class] li, ol[class] li { font-size: 1rem; }
+p {
+	line-height: 1.6rem;
+	margin-bottom: 20px;
+}
+
+// buttons style
+.btn {
+    color: #FFF;
+    font-family: $body;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.btn-primary {
+	padding: 8px 25px;
+	border-radius: 8px 8px 8px 0;
+	border: 0;
+	background-color: $btn-primary;
+	box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+	letter-spacing: 1px;
+	transition: all .3s ease;
+    &:hover {
+		letter-spacing: 2px;
+		background-color: $btn-primary;
+		box-shadow: rgba(82, 251, 138, 0.24) 0px 3px 8px;
+	   }
+}
+.btn-secondary {
+	display: inline-flex;
+	align-items: center;
+	gap: 0 10px;
+	text-decoration: underline;
+	background-color: transparent;
+	border: none;
+	svg {
+		transition: all .3s ease;
+		path {
+			fill: #FFF;
+		}
+	}
+	&:hover {
+		background-color: transparent;
+		text-decoration: none;
+		svg {
+			transform: translateX(6px);
+		}
+	}
+}
