@@ -2,6 +2,9 @@
 @import '_variables.scss';
 @import '_globals.scss'; 
 
+/* --------------------------------------------------------------
+ >> mixins add
+-------------------------------------------------------------- */
 @mixin flex {
 	display: flex;
 	align-items: center;
